@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity_Main">
+
+
+
+    <LinearLayout android:gravity="top"
+        android:id="@+id/layoutButtonsTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+
+        >
+
+        <Button
+            android:id="@+id/buttonTop1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/layoutButtonsTop"
+            android:onClick="buttonTop1OnClick"
+            android:text="B1" />
+
+        <Button
+            android:id="@+id/buttonTop2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonTop2OnClick"
+            android:text="B2" />
+
+        <Button
+            android:id="@+id/buttonTop3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonTop3OnClick"
+            android:text="B3" />
+
+        <Button
+            android:id="@+id/buttonTop4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonTop4OnClick"
+            android:text="B4" />
+
+        <Button
+            android:id="@+id/buttonTop5"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonTop5OnClick"
+            android:text="B5" />
+
+        <Button
+            android:id="@+id/buttonTop6"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonTop6OnClick"
+            android:text="B6" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separatorConsoleTop"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layoutButtonsTop"
+        android:background="@android:color/darker_gray"/>
+
+    <ScrollView
+        android:id="@+id/scrollViewConsole"
+        android:layout_below="@+id/separatorConsoleTop"
+        android:layout_above="@+id/separatorConsoleBottom"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/textViewConsole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/separatorConsoleTop"
+            android:text=""
+            android:textSize="8sp"
+            android:typeface="monospace" />
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/separatorConsoleBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"/>
+
+
+
+</RelativeLayout>
