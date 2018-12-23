@@ -16,7 +16,8 @@ DConsole is an Android library to emulate a console interface allowing to seamle
     DConsole.print are made in rapid succession.
 
 <h3>Key methods</h3>
-* **onResume**. Must be called from the activity onResume
+
+*   **onResume**. Must be called from the activity onResume
 * **onPause**. Must be called from the activity onPause
 *  **clear**. Clears the console
 * **setMaxLines**. Sets the maximum number of lines in the console buffer (or unlimited)
